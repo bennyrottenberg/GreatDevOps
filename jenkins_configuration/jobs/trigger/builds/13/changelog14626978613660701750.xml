@@ -1,9 +1,0 @@
-commit d353f22db1627be108c8c940eaa6edc816b72fd0
-tree 5fe89560db4be9c74a88047dab077763f65a97ee
-parent 712aef986f1db73414ed9b730610abf407d7c386
-author bennyrottenberg <33035398+bennyrottenberg@users.noreply.github.com> 2023-01-03 00:02:26 +0200
-committer GitHub <noreply@github.com> 2023-01-03 00:02:26 +0200
-
-    Create Jenkinsfile_trigger
-
-:000000 100644 0000000000000000000000000000000000000000 af271d7bfec764281a63f9bd6fec852807abd78b A	Jenkinsfile_trigger

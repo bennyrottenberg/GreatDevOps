@@ -1,10 +1,9 @@
 pipeline {
-    agent { docker { image 'python:3.10.7-alpine' } }
-    stages {
-        stage('run python script') {
-            steps {
-                sh 'python --version'
-            }
+    node("jenkins_agent") {
+        stage("run python script"){
+            echo 'hello'
+            sh "ls -a"
         }
-    }
+    
+}
 }

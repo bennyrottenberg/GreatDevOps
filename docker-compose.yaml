@@ -16,7 +16,7 @@ services:
     image: aurora/ssh-agent-python
     privileged: true
     user: root
-    container_name: python-agent
+    container_name: agent
     expose:
       - 22
     environment:

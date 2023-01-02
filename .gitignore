@@ -1,3 +1,4 @@
 jenkins_configuration/workspace/*
 jenkins_configuration/caches/*
 jenkins_configuration/logs/*
+jenkins_configuration/jobs/DevOps_is_great/builds/*

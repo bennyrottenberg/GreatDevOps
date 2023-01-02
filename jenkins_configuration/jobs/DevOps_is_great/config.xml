@@ -36,7 +36,26 @@
       </branches>
       <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
       <submoduleCfg class="empty-list"/>
-      <extensions/>
+      <extensions>
+        <hudson.plugins.git.extensions.impl.SparseCheckoutPaths>
+          <sparseCheckoutPaths>
+            <hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+              <path>jenkins_job/Jenkinsfile</path>
+            </hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+            <hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+              <path>python_job/Jenkinsfile</path>
+            </hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+          </sparseCheckoutPaths>
+        </hudson.plugins.git.extensions.impl.SparseCheckoutPaths>
+        <hudson.plugins.git.extensions.impl.WipeWorkspace/>
+        <hudson.plugins.git.extensions.impl.CloneOption>
+          <shallow>true</shallow>
+          <noTags>false</noTags>
+          <reference></reference>
+          <depth>1</depth>
+          <honorRefspec>false</honorRefspec>
+        </hudson.plugins.git.extensions.impl.CloneOption>
+      </extensions>
     </scm>
     <scriptPath>jenkins_job/Jenkinsfile</scriptPath>
     <lightweight>true</lightweight>

@@ -1,0 +1,9 @@
+commit a9c2decfb267fc0f6747d035399110477cf89f70
+tree 2950e7f7fd8c96535925cf7d13320b17f6cbe8b2
+parent d353f22db1627be108c8c940eaa6edc816b72fd0
+author bennyrottenberg <33035398+bennyrottenberg@users.noreply.github.com> 2023-01-03 00:08:28 +0200
+committer GitHub <noreply@github.com> 2023-01-03 00:08:28 +0200
+
+    Update Jenkinsfile_trigger
+
+:100644 100644 af271d7bfec764281a63f9bd6fec852807abd78b 83f35b5c93f612cf6cadb49ba92c7241c898c78b M	Jenkinsfile_trigger

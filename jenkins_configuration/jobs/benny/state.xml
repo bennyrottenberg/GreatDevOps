@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.branch.MultiBranchProject_-State plugin="branch-api@2.1051.v9985666b_f6cc">
+  <sourceActions>
+    <entry>
+      <string>e055ee59-0138-4a6a-9cce-4489d770d0a5</string>
+      <list>
+        <org.jenkinsci.plugins.github__branch__source.GitHubRepoMetadataAction plugin="github-branch-source@1696.v3a_7603564d04"/>
+        <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@631.v9143df5b_e4a_a"/>
+        <org.jenkinsci.plugins.github__branch__source.GitHubLink plugin="github-branch-source@1696.v3a_7603564d04">
+          <iconClassName>icon-github-repo</iconClassName>
+          <url>https://github.com/bennyrottenberg/ha_python</url>
+        </org.jenkinsci.plugins.github__branch__source.GitHubLink>
+        <org.jenkinsci.plugins.github__branch__source.GitHubDefaultBranch plugin="github-branch-source@1696.v3a_7603564d04">
+          <repoOwner>bennyrottenberg</repoOwner>
+          <repository>ha_python</repository>
+          <defaultBranch>main</defaultBranch>
+        </org.jenkinsci.plugins.github__branch__source.GitHubDefaultBranch>
+      </list>
+    </entry>
+  </sourceActions>
+</jenkins.branch.MultiBranchProject_-State>

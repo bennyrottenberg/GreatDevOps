@@ -3,3 +3,4 @@ jenkins_configuration/caches/*
 jenkins_configuration/logs/*
 jenkins_configuration/jobs/DevOps_is_great/builds/*
 jenkins_configuration/jobs/trigger-PR/*
+enkins_configuration/jobs/*/builds/*

@@ -4,6 +4,9 @@ pipeline {
       label 'jenkins_agent'
     }
   }
+  options {
+    skipDefaultCheckout true
+  }
 
   triggers {
     pollSCM '* * * * *'

@@ -1,15 +1,31 @@
 pipeline {
-  agent     { label 'jenkins_agent' }
-  //environment { MACHINE_IP=buildUtils.ip(dscr:true) }
-  stages { 
-    stage('Checkout from GITHUB') { 
+  agent {
+    node {
+      label 'jenkins_agent'
+    }
+  }
+  options {
+    skipDefaultCheckout true
+  }
+  triggers {
+    pollSCM '* * * * *'
+  }
+  stages {
+    stage('checkout') {
       steps {
-        script {
-          sh "pwd"
-          sh "ls -l"
-          sh "python"
+        checkout scm: [$class: 'GitSCM',
+          userRemoteConfigs: [[url: 'https://github.com/bennyrottenberg/GreatDevOps',
+                              credentialsId: 'git_token']],
+                              branches: [[name: 'refs/heads/master']]
+        ], poll: true
+      }
+    }
+    stage('run puthon script') {
+      steps {
+        script{
+          sh "python main.py"
         }
       }
-    }    
+    }
   }
 }

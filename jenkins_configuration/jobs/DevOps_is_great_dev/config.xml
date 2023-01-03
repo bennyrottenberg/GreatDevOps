@@ -7,9 +7,7 @@
       <jobProperties/>
       <triggers/>
       <parameters/>
-      <options>
-        <string>skipDefaultCheckout</string>
-      </options>
+      <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
   <description></description>
@@ -39,14 +37,24 @@
       <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
       <submoduleCfg class="empty-list"/>
       <extensions>
-        <hudson.plugins.git.extensions.impl.WipeWorkspace/>
+        <hudson.plugins.git.extensions.impl.SparseCheckoutPaths>
+          <sparseCheckoutPaths>
+            <hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+              <path>Jenkinsfile</path>
+            </hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+            <hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+              <path>main.py</path>
+            </hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+          </sparseCheckoutPaths>
+        </hudson.plugins.git.extensions.impl.SparseCheckoutPaths>
         <hudson.plugins.git.extensions.impl.CloneOption>
-          <shallow>true</shallow>
-          <noTags>false</noTags>
+          <shallow>false</shallow>
+          <noTags>true</noTags>
           <reference></reference>
           <depth>1</depth>
-          <honorRefspec>false</honorRefspec>
+          <honorRefspec>true</honorRefspec>
         </hudson.plugins.git.extensions.impl.CloneOption>
+        <hudson.plugins.git.extensions.impl.WipeWorkspace/>
       </extensions>
     </scm>
     <scriptPath>Jenkinsfile</scriptPath>

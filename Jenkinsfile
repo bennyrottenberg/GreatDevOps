@@ -16,7 +16,7 @@ pipeline {
         checkout scm: [$class: 'GitSCM',
           userRemoteConfigs: [[url: 'https://github.com/bennyrottenberg/GreatDevOps',
                               credentialsId: 'git_token']],
-                              branches: [[name: 'refs/heads/main']]
+                              branches: [[name: 'refs/heads/dev']]
         ], poll: true
       }
     }
@@ -28,7 +28,7 @@ pipeline {
       }
     }
   }
-  
+
 }
     
           
